@@ -1,0 +1,8 @@
+<h3 mat-subheader>DIRECT MESSAGES</h3>
+<ng-template let-item let-i="index" let-last="last" ngFor [ngForOf]="(allUsers$ | async)">
+  <a [style.background]="getBackgroundColor(item)" mat-list-item (click)="userSelected(item)">
+    <mat-icon mat-list-icon [ngStyle]="item.presence ?  {'color':'green'} : ''">
+      {{item.presence ? 'star' : 'star_border'}}
+    </mat-icon>
+    {{item.displayName}}</a>
+</ng-template>

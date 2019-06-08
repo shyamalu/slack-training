@@ -1,0 +1,63 @@
+<mat-sidenav position="end" #channelInfo mode="side" align="end" [opened]="false" [style.width.px]="270">
+  <div layout="column" layout-fill>
+    <mat-toolbar>
+      <span class="md-subhead">About #channel</span>
+      <span flex></span>
+      <button mat-icon-button (click)="channelInfo.toggle()">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </mat-toolbar>
+    <td-expansion-panel [expand]="true">
+      <ng-template td-expansion-panel-label>
+        <mat-icon class="tc-grey-600">info_outline</mat-icon>
+        <span>Channel Details</span>
+      </ng-template>
+      <div>
+        <mat-list dense>
+          <h3 matSubheader>Workspaces</h3>
+          <ng-template let-item let-i="index" let-last="last" ngFor [ngForOf]="[0,1]">
+            <mat-list-item>
+              <mat-icon matListIcon>business</mat-icon>
+              <h3 matLine>Workspace name {{i + 1}}</h3>
+              <p matLine>152 members</p>
+            </mat-list-item>
+          </ng-template>
+          <h3 matSubheader>Purpose</h3>
+          <mat-list-item>
+            <h3 matLine>Channel purpose here</h3>
+          </mat-list-item>
+          <h3 matSubheader>Created</h3>
+          <mat-list-item>
+            <h3 matLine>Created by John Jameson on May 11, 2017</h3>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </td-expansion-panel>
+    <td-expansion-panel>
+      <ng-template td-expansion-panel-label>
+        <mat-icon class="tc-light-blue-600">flare</mat-icon>
+        <span>Highlights</span>
+      </ng-template>
+      <div class="pad-sm md-caption">
+        Nothing yet. When this channel gets a bit more active, check back here.
+      </div>
+    </td-expansion-panel>
+    <td-expansion-panel>
+      <ng-template td-expansion-panel-label>
+        <mat-icon class="tc-green-600">person_outline</mat-icon>
+        <span>94 Members</span>
+      </ng-template>
+      <div>
+        <mat-list dense>
+          <ng-template let-item let-i="index" let-last="last" ngFor [ngForOf]="[0,1,2,3,4,5]">
+            <a mat-list-item>
+              <mat-icon color="accent" matListIcon>lens</mat-icon>
+              <span layout="row" layout-align="start center">
+                      <img class="size-16 push-right-sm" src="https://api.adorable.io/avatars/285/{{i}}@adorable.io.png"/> username{{i}}</span>
+            </a>
+          </ng-template>
+        </mat-list>
+      </div>
+    </td-expansion-panel>
+  </div>
+</mat-sidenav>

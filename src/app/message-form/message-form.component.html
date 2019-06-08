@@ -1,0 +1,99 @@
+<mat-card>
+  <div layout="row" layout-align="start center">
+    <div>
+      <button mat-icon-button matTooltip="Add content" matTooltipPosition="after" [matMenuTriggerFor]="chatMenu">
+        <mat-icon>add</mat-icon>
+      </button>
+      <mat-menu #chatMenu="matMenu">
+        <button mat-menu-item>Code or text snippet</button>
+        <button mat-menu-item>Google Docs file</button>
+        <button mat-menu-item>Post</button>
+        <button mat-menu-item>Google Drive</button>
+        <button mat-menu-item>Upload file</button>
+      </mat-menu>
+    </div>
+    <mat-form-field class="push-left push-right" flex layout="row" floatPlaceholder="never">
+      <textarea flex matInput placeholder="message"></textarea>
+    </mat-form-field>
+    <div>
+      <button mat-icon-button matTooltip="Add emoji" matTooltipPosition="before" [matMenuTriggerFor]="emojiMenu">
+        <mat-icon>sentiment_very_satisfied</mat-icon>
+      </button>
+      <mat-menu #emojiMenu="matMenu" x-position="before">
+        <td-menu>
+          <div td-menu-header>
+            <mat-button-toggle>
+              <mat-icon>access_time</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle>
+              <mat-icon>sentiment_very_satisfied</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle>
+              <mat-icon>spa</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle>
+              <mat-icon>room_service</mat-icon>
+            </mat-button-toggle>
+          </div>
+          <div style="height:200px;" class="push">
+            <div layout="row" layout-wrap>
+              <button flex="20" mat-icon-button>
+                <mat-icon>mood</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>mood_bad</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>sentiment_dissatisfied</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>sentiment_neutral</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>sentiment_satisfied</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>sentiment_very_dissatisfied</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>sentiment_very_satisfied</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>whatshot</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>face</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>pan_tool</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>pregnant_woman</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>pets</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>rowing</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>touch_app</mat-icon>
+              </button>
+              <button flex="20" mat-icon-button>
+                <mat-icon>visibility_off</mat-icon>
+              </button>
+            </div>
+          </div>
+          <div td-menu-footer>
+            <div layout="row" layout-align="center center" class="push-sm">
+              <span class="mat-subhead">Emoji Deluxe</span>
+              <span flex></span>
+              <span>:happy:</span>
+              <mat-icon>sentiment_very_satisfied</mat-icon>
+            </div>
+          </div>
+        </td-menu>
+      </mat-menu>
+    </div>
+  </div>
+</mat-card>

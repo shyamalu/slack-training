@@ -1,0 +1,66 @@
+<td-layout>
+  <td-navigation-drawer #slackDrawer flex sidenavTitle="Slack" name="App">
+    <user-panel></user-panel>
+  </td-navigation-drawer>
+  <td-layout-nav logo="assets:convent" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <td-layout-manage-list opened="true" mode="side">
+      <mat-toolbar td-sidenav-content color="primary" *ngIf="(isLoggedIn$ | async)">
+        <td-layout-nav-list #navList [sidenavWidth]="'257px'">
+          <div td-sidenav-toolbar-content layout="row" flex>
+            <div>
+              <button mat-button [matMenuTriggerFor]="menu">Team Name
+                <mat-icon>arrow_drop_down</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Set a status</button>
+                <button mat-menu-item>Profile &amp; account</button>
+                <button mat-menu-item>Preferences</button>
+                <button mat-menu-item>Set yourself to away</button>
+                <button mat-menu-item>Help &amp; feedback</button>
+              </mat-menu>
+            </div>
+            <span flex></span>
+          </div>
+        </td-layout-nav-list>
+      </mat-toolbar>
+      <mat-nav-list td-sidenav-content *ngIf="(isLoggedIn$ | async)">
+        <a mat-list-item>
+          <mat-icon mat-list-icon>sort</mat-icon>
+          All Unreads</a>
+        <a mat-list-item>
+          <mat-icon mat-list-icon>chat</mat-icon>
+          All Threads</a>
+        <mat-divider></mat-divider>
+        <starred></starred>
+        <mat-divider></mat-divider>
+        <channels></channels>
+        <mat-divider></mat-divider>
+        <direct-messages></direct-messages>
+      </mat-nav-list>
+      <mat-toolbar color="primary" *ngIf="(isLoggedIn$ | async)">
+        <div td-toolbar-content layout="row" layout-align="start center" flex>
+          <info-bar></info-bar>
+          <mat-card align="right" flex="40">
+            <td-search-box [alwaysVisible]="true" #searchBox placeholder="Search" [showUnderline]="false"></td-search-box>
+          </mat-card>
+        </div>
+      </mat-toolbar>
+      <mat-sidenav-container fullscreen>
+        <about *ngIf="(isLoggedIn$ | async)"></about>
+        <div layout="column" layout-fill>
+          <div flex class="mat-content">
+            <mat-card tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']">
+              <mat-list>
+                <router-outlet></router-outlet>
+              </mat-list>
+            </mat-card>
+          </div>
+        </div>
+        <message-form *ngIf="(isLoggedIn$ | async)"></message-form>
+      </mat-sidenav-container>
+    </td-layout-manage-list>
+  </td-layout-nav>
+</td-layout>
