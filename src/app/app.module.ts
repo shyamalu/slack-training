@@ -66,6 +66,8 @@ import { UserChannelsEffects } from './shared/effects/user-channels.effects';
 import { ChannelSearchDialogComponent } from './channel-search-dialog/channel-search-dialog.component';
 import { usersReducer } from './shared/reducers/user.reducers';
 import { UserEffects } from './shared/effects/user.effects';
+import { MessageEffects } from './shared/effects/message.effects';
+import { channelMessagesReducer } from './shared/reducers/channel-message.reducers';
 
 @NgModule({
     declarations   : [
@@ -127,7 +129,9 @@ import { UserEffects } from './shared/effects/user.effects';
         StoreModule.forFeature('userChannels', userChannelsReducer),
         EffectsModule.forFeature([UserChannelsEffects]),
         StoreModule.forFeature('users', usersReducer),
-        EffectsModule.forFeature([UserEffects])
+        EffectsModule.forFeature([UserEffects]),
+        StoreModule.forFeature('channelMessages', channelMessagesReducer),
+        EffectsModule.forFeature([MessageEffects])
     ],
     providers      : [
         {provide: RouterStateSerializer, useClass: CustomSerializer}

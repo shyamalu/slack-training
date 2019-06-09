@@ -8,6 +8,8 @@ import { selectAllOtherUsers } from '../shared/selectors/user.selectors';
 import { AllUsersRequested } from '../shared/actions/user.actions';
 import { currentUser } from '../auth/auth.selector';
 import { map } from 'rxjs/operators';
+import { UserService } from '../shared/services/user.service';
+import { ChannelService } from '../shared/services/channel.service';
 
 @Component({
     selector   : 'direct-messages',
@@ -19,7 +21,9 @@ export class DirectMessagesComponent implements OnInit {
     selectedUserId: string;
 
     constructor(private store: Store<AppState>,
-                private db: AngularFirestore) {
+                private db: AngularFirestore,
+                private userService: UserService,
+                private channelService: ChannelService) {
     }
 
     ngOnInit() {
@@ -35,6 +39,14 @@ export class DirectMessagesComponent implements OnInit {
                 })
             ).subscribe();
 
+        this.channelService.getSelectedChannel()
+            .subscribe(
+                (c) => {
+                    if (c.selectedChannel !== null) {
+                        this.unSelectUser();
+                    }
+                });
+
     }
 
     getBackgroundColor(item: User) {
@@ -47,5 +59,10 @@ export class DirectMessagesComponent implements OnInit {
 
     userSelected(item) {
         this.selectedUserId = item.id;
+        this.userService.userSelected(this.selectedUserId);
+    }
+
+    unSelectUser() {
+        this.selectedUserId = null;
     }
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { from, Observable } from 'rxjs';
+import { from, Observable, Subject } from 'rxjs';
 import { User } from '../../model/user';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { map, withLatestFrom } from 'rxjs/operators';
@@ -11,6 +11,8 @@ import { Presence } from '../../model/presence';
     providedIn: 'root'
 })
 export class UserService {
+
+    private userSelectedSubject = new Subject<any>();
 
     constructor(private db: AngularFirestore, private afAuth: AngularFireAuth) {
     }
@@ -65,6 +67,18 @@ export class UserService {
                     return convertSnaps<Presence>(snaps);
                 })
             );
+    }
+
+    userSelected(userId: string) {
+        this.userSelectedSubject.next({selectedUser: userId});
+    }
+
+    clear() {
+        this.userSelectedSubject.next({selectedUser: null});
+    }
+
+    getSelectedUser(): Observable<any> {
+        return this.userSelectedSubject.asObservable();
     }
 }
 

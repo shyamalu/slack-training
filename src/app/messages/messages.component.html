@@ -1,3 +1,21 @@
-<p>
-  messages works!
-</p>
+<mat-card tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']" *ngIf="messages?.length">
+  <mat-list>
+    <ng-template let-item let-i="index" let-last="last" ngFor [ngForOf]="messages">
+      <mat-list-item>
+        <img mat-list-avatar src="{{item?.sentBy?.avatar}}" />
+        <h3 mat-line class="cursor-pointer">{{item?.sentBy?.displayName}}</h3>
+        <p mat-line>
+          <span class="text-wrap">
+            {{item.content}}
+          </span>
+        </p>
+      </mat-list-item>
+      <mat-divider *ngIf="!last" mat-inset></mat-divider>
+    </ng-template>
+  </mat-list>
+  <mat-dialog-actions>
+    <button class="bottom-toolbar" mat-raised-button color="primary"
+            (click)="loadMore()">Load More
+    </button>
+  </mat-dialog-actions>
+</mat-card>

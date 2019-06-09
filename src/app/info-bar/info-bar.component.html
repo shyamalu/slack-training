@@ -1,10 +1,12 @@
 <div flex>
   <div layout="row" layout-align="start center" style="margin-right: 20px;">
-    <mat-icon class="md-caption" (click)="toggleStar()">{{(userChannel$ | async)?.isStarred ? 'star' : 'star_border'}}</mat-icon>
-    <mat-icon class="md-caption push-left-sm">person</mat-icon>
-    <ng-container *ngIf="(channel$ | async) as channel">
-      <span class="md-caption">{{channel.totalUsers}}</span>
-      <span class="md-caption push-left-sm">{{channel.name}}</span>
+    <ng-container *ngIf="selectedChannelId != null">
+      <mat-icon class="md-caption" (click)="toggleStar()">{{(userChannel$ | async)?.isStarred ? 'star' : 'star_border'}}</mat-icon>
+      <mat-icon class="md-caption push-left-sm">person</mat-icon>
+      <ng-container *ngIf="(channel$ | async) as channel">
+        <span class="md-caption">{{channel.totalUsers}}</span>
+        <span class="md-caption push-left-sm">{{channel.name}}</span>
+      </ng-container>
     </ng-container>
   </div>
 </div>

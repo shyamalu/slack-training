@@ -460,7 +460,7 @@ module.exports = ">>> body {\n  margin: 0;\n}\n\nmain {\n  margin: 30px;\n}\n\n.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<td-layout>\n  <td-navigation-drawer #slackDrawer flex sidenavTitle=\"Slack\" name=\"App\">\n    <user-panel></user-panel>\n  </td-navigation-drawer>\n  <td-layout-nav logo=\"assets:convent\" navigationRoute=\"/\">\n    <button mat-icon-button td-menu-button tdLayoutToggle>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <td-layout-manage-list opened=\"true\" mode=\"side\">\n      <mat-toolbar td-sidenav-content color=\"primary\" *ngIf=\"(isLoggedIn$ | async)\">\n        <td-layout-nav-list #navList [sidenavWidth]=\"'257px'\">\n          <div td-sidenav-toolbar-content layout=\"row\" flex>\n            <div>\n              <button mat-button [matMenuTriggerFor]=\"menu\">Team Name\n                <mat-icon>arrow_drop_down</mat-icon>\n              </button>\n              <mat-menu #menu=\"matMenu\">\n                <button mat-menu-item>Set a status</button>\n                <button mat-menu-item>Profile &amp; account</button>\n                <button mat-menu-item>Preferences</button>\n                <button mat-menu-item>Set yourself to away</button>\n                <button mat-menu-item>Help &amp; feedback</button>\n              </mat-menu>\n            </div>\n            <span flex></span>\n          </div>\n        </td-layout-nav-list>\n      </mat-toolbar>\n      <mat-nav-list td-sidenav-content *ngIf=\"(isLoggedIn$ | async)\">\n        <a mat-list-item>\n          <mat-icon mat-list-icon>sort</mat-icon>\n          All Unreads</a>\n        <a mat-list-item>\n          <mat-icon mat-list-icon>chat</mat-icon>\n          All Threads</a>\n        <mat-divider></mat-divider>\n        <starred></starred>\n        <mat-divider></mat-divider>\n        <channels></channels>\n        <mat-divider></mat-divider>\n        <direct-messages></direct-messages>\n      </mat-nav-list>\n      <mat-toolbar color=\"primary\" *ngIf=\"(isLoggedIn$ | async)\">\n        <div td-toolbar-content layout=\"row\" layout-align=\"start center\" flex>\n          <info-bar></info-bar>\n          <mat-card align=\"right\" flex=\"40\">\n            <td-search-box [alwaysVisible]=\"true\" #searchBox placeholder=\"Search\" [showUnderline]=\"false\"></td-search-box>\n          </mat-card>\n        </div>\n      </mat-toolbar>\n      <mat-sidenav-container fullscreen>\n        <about *ngIf=\"(isLoggedIn$ | async)\"></about>\n        <div layout=\"column\" layout-fill>\n          <div flex class=\"mat-content\">\n            <mat-card tdMediaToggle=\"gt-xs\" [mediaClasses]=\"['push-sm']\">\n              <mat-list>\n                <router-outlet></router-outlet>\n              </mat-list>\n            </mat-card>\n          </div>\n        </div>\n        <message-form *ngIf=\"(isLoggedIn$ | async)\"></message-form>\n      </mat-sidenav-container>\n    </td-layout-manage-list>\n  </td-layout-nav>\n</td-layout>\n"
+module.exports = "<td-layout>\n  <td-navigation-drawer #slackDrawer flex sidenavTitle=\"Slack\" name=\"App\">\n    <user-panel></user-panel>\n  </td-navigation-drawer>\n  <td-layout-nav logo=\"assets:convent\" navigationRoute=\"/\">\n    <button mat-icon-button td-menu-button tdLayoutToggle>\n      <mat-icon>menu</mat-icon>\n    </button>\n    <td-layout-manage-list opened=\"true\" mode=\"side\">\n      <mat-toolbar td-sidenav-content color=\"primary\" *ngIf=\"(isLoggedIn$ | async)\">\n        <td-layout-nav-list #navList [sidenavWidth]=\"'257px'\">\n          <div td-sidenav-toolbar-content layout=\"row\" flex>\n            <div>\n              <button mat-button [matMenuTriggerFor]=\"menu\">Team Name\n                <mat-icon>arrow_drop_down</mat-icon>\n              </button>\n              <mat-menu #menu=\"matMenu\">\n                <button mat-menu-item>Set a status</button>\n                <button mat-menu-item>Profile &amp; account</button>\n                <button mat-menu-item>Preferences</button>\n                <button mat-menu-item>Set yourself to away</button>\n                <button mat-menu-item>Help &amp; feedback</button>\n              </mat-menu>\n            </div>\n            <span flex></span>\n          </div>\n        </td-layout-nav-list>\n      </mat-toolbar>\n      <mat-nav-list td-sidenav-content *ngIf=\"(isLoggedIn$ | async)\">\n        <a mat-list-item>\n          <mat-icon mat-list-icon>sort</mat-icon>\n          All Unreads</a>\n        <a mat-list-item>\n          <mat-icon mat-list-icon>chat</mat-icon>\n          All Threads</a>\n        <mat-divider></mat-divider>\n        <starred></starred>\n        <mat-divider></mat-divider>\n        <channels></channels>\n        <mat-divider></mat-divider>\n        <direct-messages></direct-messages>\n      </mat-nav-list>\n      <mat-toolbar color=\"primary\" *ngIf=\"(isLoggedIn$ | async)\">\n        <div td-toolbar-content layout=\"row\" layout-align=\"start center\" flex>\n          <info-bar></info-bar>\n<!--          <mat-card align=\"right\" flex=\"40\">-->\n<!--            <td-search-box [alwaysVisible]=\"true\" #searchBox placeholder=\"Search\" [showUnderline]=\"false\"></td-search-box>-->\n<!--          </mat-card>-->\n        </div>\n      </mat-toolbar>\n      <mat-sidenav-container fullscreen>\n        <about *ngIf=\"(isLoggedIn$ | async)\"></about>\n        <div layout=\"column\" layout-fill>\n          <div flex class=\"mat-content\">\n            <mat-card tdMediaToggle=\"gt-xs\" [mediaClasses]=\"['push-sm']\">\n              <mat-list>\n                <router-outlet></router-outlet>\n              </mat-list>\n            </mat-card>\n          </div>\n        </div>\n        <message-form *ngIf=\"(isLoggedIn$ | async)\"></message-form>\n      </mat-sidenav-container>\n    </td-layout-manage-list>\n  </td-layout-nav>\n</td-layout>\n"
 
 /***/ }),
 
@@ -665,12 +665,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _channel_search_dialog_channel_search_dialog_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./channel-search-dialog/channel-search-dialog.component */ "./src/app/channel-search-dialog/channel-search-dialog.component.ts");
 /* harmony import */ var _shared_reducers_user_reducers__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./shared/reducers/user.reducers */ "./src/app/shared/reducers/user.reducers.ts");
 /* harmony import */ var _shared_effects_user_effects__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./shared/effects/user.effects */ "./src/app/shared/effects/user.effects.ts");
+/* harmony import */ var _shared_effects_message_effects__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./shared/effects/message.effects */ "./src/app/shared/effects/message.effects.ts");
+/* harmony import */ var _shared_reducers_channel_message_reducers__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./shared/reducers/channel-message.reducers */ "./src/app/shared/reducers/channel-message.reducers.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -779,7 +783,9 @@ var AppModule = /** @class */ (function () {
                 _ngrx_store__WEBPACK_IMPORTED_MODULE_11__["StoreModule"].forFeature('userChannels', _shared_reducers_user_channel_reducers__WEBPACK_IMPORTED_MODULE_39__["userChannelsReducer"]),
                 _ngrx_effects__WEBPACK_IMPORTED_MODULE_13__["EffectsModule"].forFeature([_shared_effects_user_channels_effects__WEBPACK_IMPORTED_MODULE_40__["UserChannelsEffects"]]),
                 _ngrx_store__WEBPACK_IMPORTED_MODULE_11__["StoreModule"].forFeature('users', _shared_reducers_user_reducers__WEBPACK_IMPORTED_MODULE_42__["usersReducer"]),
-                _ngrx_effects__WEBPACK_IMPORTED_MODULE_13__["EffectsModule"].forFeature([_shared_effects_user_effects__WEBPACK_IMPORTED_MODULE_43__["UserEffects"]])
+                _ngrx_effects__WEBPACK_IMPORTED_MODULE_13__["EffectsModule"].forFeature([_shared_effects_user_effects__WEBPACK_IMPORTED_MODULE_43__["UserEffects"]]),
+                _ngrx_store__WEBPACK_IMPORTED_MODULE_11__["StoreModule"].forFeature('channelMessages', _shared_reducers_channel_message_reducers__WEBPACK_IMPORTED_MODULE_45__["channelMessagesReducer"]),
+                _ngrx_effects__WEBPACK_IMPORTED_MODULE_13__["EffectsModule"].forFeature([_shared_effects_message_effects__WEBPACK_IMPORTED_MODULE_44__["MessageEffects"]])
             ],
             providers: [
                 { provide: _ngrx_router_store__WEBPACK_IMPORTED_MODULE_31__["RouterStateSerializer"], useClass: _shared_utils__WEBPACK_IMPORTED_MODULE_32__["CustomSerializer"] }
@@ -1106,7 +1112,7 @@ function authReducer(state, action) {
 /*!***************************************!*\
   !*** ./src/app/auth/auth.selector.ts ***!
   \***************************************/
-/*! exports provided: selectAuthState, loggedInUserId, isLoggedIn, isLoggedOut, selectAvatar, selectDisplayName */
+/*! exports provided: selectAuthState, loggedInUserId, isLoggedIn, currentUser, isLoggedOut, selectAvatar, selectDisplayName */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1114,6 +1120,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAuthState", function() { return selectAuthState; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loggedInUserId", function() { return loggedInUserId; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isLoggedIn", function() { return isLoggedIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentUser", function() { return currentUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isLoggedOut", function() { return isLoggedOut; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAvatar", function() { return selectAvatar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectDisplayName", function() { return selectDisplayName; });
@@ -1122,6 +1129,7 @@ __webpack_require__.r(__webpack_exports__);
 var selectAuthState = function (state) { return state.auth; };
 var loggedInUserId = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAuthState, function (auth) { return auth.user ? auth.user.id : undefined; });
 var isLoggedIn = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAuthState, function (auth) { return auth.loggedIn; });
+var currentUser = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAuthState, function (auth) { return auth.user; });
 var isLoggedOut = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(isLoggedIn, function (loggedIn) { return !loggedIn; });
 var selectAvatar = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAuthState, function (auth) { return auth.user ? auth.user.avatar : null; });
 var selectDisplayName = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAuthState, function (auth) { return auth.user ? auth.user.displayName : null; });
@@ -1411,6 +1419,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _channel_search_dialog_channel_search_dialog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../channel-search-dialog/channel-search-dialog.component */ "./src/app/channel-search-dialog/channel-search-dialog.component.ts");
 /* harmony import */ var _shared_selectors_user_channel_selectors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/selectors/user-channel.selectors */ "./src/app/shared/selectors/user-channel.selectors.ts");
 /* harmony import */ var _shared_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../shared/actions/user-channel.actions */ "./src/app/shared/actions/user-channel.actions.ts");
+/* harmony import */ var _shared_actions_message_actions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../shared/actions/message.actions */ "./src/app/shared/actions/message.actions.ts");
+/* harmony import */ var _shared_services_user_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../shared/services/user.service */ "./src/app/shared/services/user.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1430,17 +1440,27 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var ChannelsComponent = /** @class */ (function () {
-    function ChannelsComponent(dialog, store, db, channelService) {
+    function ChannelsComponent(dialog, store, db, channelService, userService) {
         this.dialog = dialog;
         this.store = store;
         this.db = db;
         this.channelService = channelService;
+        this.userService = userService;
     }
     ChannelsComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.store.dispatch(new _shared_actions_channel_actions__WEBPACK_IMPORTED_MODULE_3__["AllChannelsRequested"]());
         this.allChannels$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_4__["select"])(_shared_selectors_user_channel_selectors__WEBPACK_IMPORTED_MODULE_8__["selectAllUserChannels"]));
         this.channelTotal$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_4__["select"])(_shared_selectors_user_channel_selectors__WEBPACK_IMPORTED_MODULE_8__["countUserChannels"]));
+        this.userService.getSelectedUser()
+            .subscribe(function (c) {
+            if (c.selectedUser !== null) {
+                _this.unSelectChannel();
+            }
+        });
     };
     ChannelsComponent.prototype.addChannel = function () {
         var dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogConfig"]();
@@ -1457,11 +1477,15 @@ var ChannelsComponent = /** @class */ (function () {
         var dialogRef = this.dialog.open(_channel_search_dialog_channel_search_dialog_component__WEBPACK_IMPORTED_MODULE_7__["ChannelSearchDialogComponent"], dialogConfig);
     };
     ChannelsComponent.prototype.channelSelected = function (item) {
+        this.userService.clear();
         this.selectedChannelId = item.channelId;
-        this.store.dispatch(new _shared_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_9__["UserChannelSelected"]({ userId: item.userId, channelId: item.channelId }));
-        this.store.dispatch(new _shared_actions_channel_actions__WEBPACK_IMPORTED_MODULE_3__["ChannelRequested"]({ channelId: item.channelId }));
-        this.channelService.clear();
-        this.channelService.channelSelected(item.channelId);
+        if (!!this.selectedChannelId) {
+            this.store.dispatch(new _shared_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_9__["UserChannelSelected"]({ userId: item.userId, channelId: item.channelId }));
+            this.store.dispatch(new _shared_actions_channel_actions__WEBPACK_IMPORTED_MODULE_3__["ChannelRequested"]({ channelId: item.channelId }));
+            this.store.dispatch(new _shared_actions_message_actions__WEBPACK_IMPORTED_MODULE_10__["ChannelMessagesRequested"]({ channelId: item.channelId }));
+            this.channelService.clear();
+            this.channelService.channelSelected(item.channelId);
+        }
     };
     ChannelsComponent.prototype.getBackgroundColor = function (item) {
         if (item.channelId === this.selectedChannelId) {
@@ -1470,6 +1494,10 @@ var ChannelsComponent = /** @class */ (function () {
         else {
             return '';
         }
+    };
+    ChannelsComponent.prototype.unSelectChannel = function () {
+        this.channelService.clear();
+        this.selectedChannelId = null;
     };
     ChannelsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1480,7 +1508,8 @@ var ChannelsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"],
             _ngrx_store__WEBPACK_IMPORTED_MODULE_4__["Store"],
             _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"],
-            _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_5__["ChannelService"]])
+            _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_5__["ChannelService"],
+            _shared_services_user_service__WEBPACK_IMPORTED_MODULE_11__["UserService"]])
     ], ChannelsComponent);
     return ChannelsComponent;
 }());
@@ -1496,7 +1525,7 @@ var ChannelsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 mat-subheader>DIRECT MESSAGES</h3>\n<ng-template let-item let-i=\"index\" let-last=\"last\" ngFor [ngForOf]=\"[0,1,2,3]\">\n  <a mat-list-item>\n    <mat-icon color=\"accent\" mat-list-icon>lens</mat-icon>\n    username{{i}}</a>\n</ng-template>\n\n<ng-template let-item let-i=\"index\" let-last=\"last\" ngFor [ngForOf]=\"(allUsers$ | async)\">\n  <a [style.background]=\"getBackgroundColor(item)\" mat-list-item (click)=\"userSelected(item)\">\n    <mat-icon mat-list-icon>#</mat-icon>\n    {{item.displayName}}</a>\n</ng-template>\n"
+module.exports = "<h3 mat-subheader>DIRECT MESSAGES</h3>\n<ng-template let-item let-i=\"index\" let-last=\"last\" ngFor [ngForOf]=\"(allUsers$ | async)\">\n  <a [style.background]=\"getBackgroundColor(item)\" mat-list-item (click)=\"userSelected(item)\">\n    <mat-icon mat-list-icon [ngStyle]=\"item.presence ?  {'color':'green'} : ''\">\n      {{item.presence ? 'star' : 'star_border'}}\n    </mat-icon>\n    {{item.displayName}}</a>\n</ng-template>\n"
 
 /***/ }),
 
@@ -1526,6 +1555,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
 /* harmony import */ var _shared_selectors_user_selectors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/selectors/user.selectors */ "./src/app/shared/selectors/user.selectors.ts");
 /* harmony import */ var _shared_actions_user_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/actions/user.actions */ "./src/app/shared/actions/user.actions.ts");
+/* harmony import */ var _auth_auth_selector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../auth/auth.selector */ "./src/app/auth/auth.selector.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _shared_services_user_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../shared/services/user.service */ "./src/app/shared/services/user.service.ts");
+/* harmony import */ var _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/services/channel.service */ "./src/app/shared/services/channel.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1540,14 +1573,33 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 var DirectMessagesComponent = /** @class */ (function () {
-    function DirectMessagesComponent(store, db) {
+    function DirectMessagesComponent(store, db, userService, channelService) {
         this.store = store;
         this.db = db;
+        this.userService = userService;
+        this.channelService = channelService;
     }
     DirectMessagesComponent.prototype.ngOnInit = function () {
-        this.store.dispatch(new _shared_actions_user_actions__WEBPACK_IMPORTED_MODULE_4__["AllUsersRequested"]());
-        this.allUsers$ = this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["select"])(_shared_selectors_user_selectors__WEBPACK_IMPORTED_MODULE_3__["selectAllUsers"]));
+        var _this = this;
+        this.store
+            .pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["select"])(_auth_auth_selector__WEBPACK_IMPORTED_MODULE_5__["currentUser"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["map"])(function (cUser) {
+            if (!!cUser) {
+                var userId = cUser.id;
+                _this.store.dispatch(new _shared_actions_user_actions__WEBPACK_IMPORTED_MODULE_4__["AllUsersRequested"]());
+                _this.allUsers$ = _this.store.pipe(Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["select"])(Object(_shared_selectors_user_selectors__WEBPACK_IMPORTED_MODULE_3__["selectAllOtherUsers"])(userId)));
+            }
+        })).subscribe();
+        this.channelService.getSelectedChannel()
+            .subscribe(function (c) {
+            if (c.selectedChannel !== null) {
+                _this.unSelectUser();
+            }
+        });
     };
     DirectMessagesComponent.prototype.getBackgroundColor = function (item) {
         if (item.id === this.selectedUserId) {
@@ -1559,6 +1611,10 @@ var DirectMessagesComponent = /** @class */ (function () {
     };
     DirectMessagesComponent.prototype.userSelected = function (item) {
         this.selectedUserId = item.id;
+        this.userService.userSelected(this.selectedUserId);
+    };
+    DirectMessagesComponent.prototype.unSelectUser = function () {
+        this.selectedUserId = null;
     };
     DirectMessagesComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1567,7 +1623,9 @@ var DirectMessagesComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./direct-messages.component.scss */ "./src/app/direct-messages/direct-messages.component.scss")]
         }),
         __metadata("design:paramtypes", [_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["Store"],
-            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]])
+            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"],
+            _shared_services_user_service__WEBPACK_IMPORTED_MODULE_7__["UserService"],
+            _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_8__["ChannelService"]])
     ], DirectMessagesComponent);
     return DirectMessagesComponent;
 }());
@@ -1583,7 +1641,7 @@ var DirectMessagesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div flex>\n  <div layout=\"row\" layout-align=\"start center\" style=\"margin-right: 20px;\">\n    <mat-icon class=\"md-caption\" (click)=\"toggleStar()\">{{(userChannel$ | async)?.isStarred ? 'star' : 'star_border'}}</mat-icon>\n    <mat-icon class=\"md-caption push-left-sm\">person</mat-icon>\n    <ng-container *ngIf=\"(channel$ | async) as channel\">\n      <span class=\"md-caption\">{{channel.totalUsers}}</span>\n      <span class=\"md-caption push-left-sm\">{{channel.name}}</span>\n    </ng-container>\n  </div>\n</div>\n\n"
+module.exports = "<div flex>\n  <div layout=\"row\" layout-align=\"start center\" style=\"margin-right: 20px;\">\n    <ng-container *ngIf=\"selectedChannelId != null\">\n      <mat-icon class=\"md-caption\" (click)=\"toggleStar()\">{{(userChannel$ | async)?.isStarred ? 'star' : 'star_border'}}</mat-icon>\n      <mat-icon class=\"md-caption push-left-sm\">person</mat-icon>\n      <ng-container *ngIf=\"(channel$ | async) as channel\">\n        <span class=\"md-caption\">{{channel.totalUsers}}</span>\n        <span class=\"md-caption push-left-sm\">{{channel.name}}</span>\n      </ng-container>\n    </ng-container>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -1653,13 +1711,10 @@ var InfoBarComponent = /** @class */ (function () {
                         .subscribe(function (x) { return _this.isStarred = x; });
                 }
                 else {
-                    _this.clear();
+                    _this.selectedChannelId = null;
                 }
             }
         })).subscribe();
-    };
-    InfoBarComponent.prototype.clear = function () {
-        this.selectedChannelId = null;
     };
     InfoBarComponent.prototype.toggleStar = function () {
         if (this.userId && this.selectedChannelId) {
@@ -1783,7 +1838,8 @@ var LoginComponent = /** @class */ (function () {
             id: result.user.uid,
             avatar: result.user.photoURL,
             displayName: result.user.displayName,
-            email: result.user.email
+            email: result.user.email,
+            presence: true
         };
         this.store.dispatch(new _auth_auth_actions__WEBPACK_IMPORTED_MODULE_6__["Login"]({ user: user }));
         this.ngZone.run(function () { return _this.router.navigateByUrl('/'); });
@@ -1813,7 +1869,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\n  <div layout=\"row\" layout-align=\"start center\">\n    <div>\n      <button mat-icon-button matTooltip=\"Add content\" matTooltipPosition=\"after\" [matMenuTriggerFor]=\"chatMenu\">\n        <mat-icon>add</mat-icon>\n      </button>\n      <mat-menu #chatMenu=\"matMenu\">\n        <button mat-menu-item>Code or text snippet</button>\n        <button mat-menu-item>Google Docs file</button>\n        <button mat-menu-item>Post</button>\n        <button mat-menu-item>Google Drive</button>\n        <button mat-menu-item>Upload file</button>\n      </mat-menu>\n    </div>\n    <mat-form-field class=\"push-left push-right\" flex layout=\"row\" floatPlaceholder=\"never\">\n      <textarea flex matInput placeholder=\"message\"></textarea>\n    </mat-form-field>\n    <div>\n      <button mat-icon-button matTooltip=\"Add emoji\" matTooltipPosition=\"before\" [matMenuTriggerFor]=\"emojiMenu\">\n        <mat-icon>sentiment_very_satisfied</mat-icon>\n      </button>\n      <mat-menu #emojiMenu=\"matMenu\" x-position=\"before\">\n        <td-menu>\n          <div td-menu-header>\n            <mat-button-toggle>\n              <mat-icon>access_time</mat-icon>\n            </mat-button-toggle>\n            <mat-button-toggle>\n              <mat-icon>sentiment_very_satisfied</mat-icon>\n            </mat-button-toggle>\n            <mat-button-toggle>\n              <mat-icon>spa</mat-icon>\n            </mat-button-toggle>\n            <mat-button-toggle>\n              <mat-icon>room_service</mat-icon>\n            </mat-button-toggle>\n          </div>\n          <div style=\"height:200px;\" class=\"push\">\n            <div layout=\"row\" layout-wrap>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>mood</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>mood_bad</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>sentiment_dissatisfied</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>sentiment_neutral</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>sentiment_satisfied</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>sentiment_very_dissatisfied</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>sentiment_very_satisfied</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>whatshot</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>face</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>pan_tool</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>pregnant_woman</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>pets</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>rowing</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>touch_app</mat-icon>\n              </button>\n              <button flex=\"20\" mat-icon-button>\n                <mat-icon>visibility_off</mat-icon>\n              </button>\n            </div>\n          </div>\n          <div td-menu-footer>\n            <div layout=\"row\" layout-align=\"center center\" class=\"push-sm\">\n              <span class=\"mat-subhead\">Emoji Deluxe</span>\n              <span flex></span>\n              <span>:happy:</span>\n              <mat-icon>sentiment_very_satisfied</mat-icon>\n            </div>\n          </div>\n        </td-menu>\n      </mat-menu>\n    </div>\n  </div>\n</mat-card>\n"
+module.exports = "<ng-container *ngIf=\"(showMessageForm$ | async)\">\n  <mat-card [formGroup]=\"messageForm\">\n    <div layout=\"row\" layout-align=\"start center\">\n      <div>\n        <button mat-icon-button matTooltip=\"Add content\" matTooltipPosition=\"after\" [matMenuTriggerFor]=\"chatMenu\">\n          <mat-icon>add</mat-icon>\n        </button>\n        <mat-menu #chatMenu=\"matMenu\">\n          <button mat-menu-item>Code or text snippet</button>\n          <button mat-menu-item>Google Docs file</button>\n          <button mat-menu-item>Post</button>\n          <button mat-menu-item>Google Drive</button>\n          <button mat-menu-item>Upload file</button>\n        </mat-menu>\n      </div>\n      <mat-form-field class=\"push-left push-right\" flex layout=\"row\" floatPlaceholder=\"never\">\n        <textarea matInput\n                  formControlName=\"message\"\n                  flex placeholder=\"message\"></textarea>\n      </mat-form-field>\n      <div>\n        <button class=\"mat-raised-button\"\n                (click)=\"send()\">\n          Send\n        </button>\n      </div>\n    </div>\n  </mat-card>\n</ng-container>\n"
 
 /***/ }),
 
@@ -1839,6 +1895,15 @@ module.exports = ".footer {\n  position: fixed;\n  bottom: 0; }\n\n/*# sourceMap
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageFormComponent", function() { return MessageFormComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/services/channel.service */ "./src/app/shared/services/channel.service.ts");
+/* harmony import */ var _shared_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/services/user.service */ "./src/app/shared/services/user.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var uuid_v1__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! uuid/v1 */ "./node_modules/uuid/v1.js");
+/* harmony import */ var uuid_v1__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(uuid_v1__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
+/* harmony import */ var _shared_actions_message_actions__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../shared/actions/message.actions */ "./src/app/shared/actions/message.actions.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1849,10 +1914,62 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
+
+
+
+
 var MessageFormComponent = /** @class */ (function () {
-    function MessageFormComponent() {
+    function MessageFormComponent(store, fb, channelService, userService) {
+        this.store = store;
+        this.fb = fb;
+        this.channelService = channelService;
+        this.userService = userService;
+        this.messageForm = fb.group({
+            message: ''
+        });
     }
     MessageFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["combineLatest"])(this.userService.getSelectedUser(), this.channelService.getSelectedChannel()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(function (data) {
+            if (data != null && data.length === 2) {
+                _this.selectedUserId = !!data[0] ? data[0].selectedUser : undefined;
+                _this.selectedChannelId = !!data[1] ? data[1].selectedChannel : undefined;
+                if (_this.selectedChannelId === null && _this.selectedUserId === null) {
+                    _this.showMessageForm$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(false);
+                }
+                else {
+                    _this.showMessageForm$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(true);
+                }
+            }
+        })).subscribe();
+    };
+    MessageFormComponent.prototype.send = function () {
+        var user = JSON.parse(sessionStorage.getItem('user'));
+        var changes = this.messageForm.value;
+        var sendMessage = this.prepareMessage(changes);
+        if (!!this.selectedUserId) {
+            console.log("send message for user id " + this.selectedUserId);
+            this.store.dispatch(new _shared_actions_message_actions__WEBPACK_IMPORTED_MODULE_8__["PostMessageToDirectUser"]({ fromUserId: user.id, toUserId: this.selectedUserId, message: sendMessage }));
+        }
+        else if (!!this.selectedChannelId) {
+            this.store.dispatch(new _shared_actions_message_actions__WEBPACK_IMPORTED_MODULE_8__["PostMessageToChannel"]({ channelId: this.selectedChannelId, message: sendMessage }));
+        }
+        this.messageForm.reset();
+    };
+    MessageFormComponent.prototype.prepareMessage = function (_a) {
+        var message = _a.message;
+        var user = JSON.parse(sessionStorage.getItem('user'));
+        var messageToSend = {
+            messageId: uuid_v1__WEBPACK_IMPORTED_MODULE_6___default()(),
+            content: message,
+            timestamp: new Date().getTime(),
+            sentBy: user
+        };
+        return messageToSend;
     };
     MessageFormComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1860,7 +1977,10 @@ var MessageFormComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./message-form.component.html */ "./src/app/message-form/message-form.component.html"),
             styles: [__webpack_require__(/*! ./message-form.component.scss */ "./src/app/message-form/message-form.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_ngrx_store__WEBPACK_IMPORTED_MODULE_7__["Store"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"],
+            _shared_services_channel_service__WEBPACK_IMPORTED_MODULE_2__["ChannelService"],
+            _shared_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]])
     ], MessageFormComponent);
     return MessageFormComponent;
 }());
@@ -1962,12 +2082,13 @@ var metaReducers = !_environments_environment__WEBPACK_IMPORTED_MODULE_0__["envi
 /*!**************************************!*\
   !*** ./src/app/services/db-utils.ts ***!
   \**************************************/
-/*! exports provided: convertSnaps */
+/*! exports provided: convertSnaps, convertValueChanges */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "convertSnaps", function() { return convertSnaps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "convertValueChanges", function() { return convertValueChanges; });
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -1983,6 +2104,9 @@ function convertSnaps(snaps) {
     return snaps.map(function (snap) {
         return __assign({ id: snap.payload.doc.id }, snap.payload.doc.data());
     });
+}
+function convertValueChanges(snaps) {
+    return snaps.map(function (snap) { return snap; });
 }
 
 
@@ -2048,6 +2172,63 @@ var ChannelLoaded = /** @class */ (function () {
         this.type = ChannelActionTypes.ChannelLoaded;
     }
     return ChannelLoaded;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/actions/message.actions.ts":
+/*!***************************************************!*\
+  !*** ./src/app/shared/actions/message.actions.ts ***!
+  \***************************************************/
+/*! exports provided: MessageActionsTypes, ChannelMessagesRequested, ChannelMessageAdded, PostMessageToChannel, PostMessageToDirectUser */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageActionsTypes", function() { return MessageActionsTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChannelMessagesRequested", function() { return ChannelMessagesRequested; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChannelMessageAdded", function() { return ChannelMessageAdded; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostMessageToChannel", function() { return PostMessageToChannel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostMessageToDirectUser", function() { return PostMessageToDirectUser; });
+var MessageActionsTypes;
+(function (MessageActionsTypes) {
+    MessageActionsTypes["ChannelMessagesRequested"] = "[Messages Home Page] Channel Messages Requested";
+    MessageActionsTypes["ChannelMessageAdded"] = "[Messages Home Page] Channel Message Added";
+    MessageActionsTypes["PostMessageToChannel"] = "[Message Dialog] Send Message to Channel";
+    MessageActionsTypes["PostMessageToDirectUser"] = "[Message Dialog] Send Message to Direct User";
+})(MessageActionsTypes || (MessageActionsTypes = {}));
+var ChannelMessagesRequested = /** @class */ (function () {
+    function ChannelMessagesRequested(payload) {
+        this.payload = payload;
+        this.type = MessageActionsTypes.ChannelMessagesRequested;
+    }
+    return ChannelMessagesRequested;
+}());
+
+var ChannelMessageAdded = /** @class */ (function () {
+    function ChannelMessageAdded(payload) {
+        this.payload = payload;
+        this.type = MessageActionsTypes.ChannelMessageAdded;
+    }
+    return ChannelMessageAdded;
+}());
+
+var PostMessageToChannel = /** @class */ (function () {
+    function PostMessageToChannel(payload) {
+        this.payload = payload;
+        this.type = MessageActionsTypes.PostMessageToChannel;
+    }
+    return PostMessageToChannel;
+}());
+
+var PostMessageToDirectUser = /** @class */ (function () {
+    function PostMessageToDirectUser(payload) {
+        this.payload = payload;
+        this.type = MessageActionsTypes.PostMessageToDirectUser;
+    }
+    return PostMessageToDirectUser;
 }());
 
 
@@ -2135,7 +2316,7 @@ var UserChannelUnStarred = /** @class */ (function () {
 /*!************************************************!*\
   !*** ./src/app/shared/actions/user.actions.ts ***!
   \************************************************/
-/*! exports provided: UserActionsTypes, AllUsersRequested, AllUsersLoaded */
+/*! exports provided: UserActionsTypes, AllUsersRequested, AllUsersLoaded, UserPresenceUpdate */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2143,10 +2324,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserActionsTypes", function() { return UserActionsTypes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllUsersRequested", function() { return AllUsersRequested; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllUsersLoaded", function() { return AllUsersLoaded; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserPresenceUpdate", function() { return UserPresenceUpdate; });
 var UserActionsTypes;
 (function (UserActionsTypes) {
-    UserActionsTypes["AllUsersRequested"] = "[Channels Home Page] All User Channels Requested";
-    UserActionsTypes["AllUsersLoaded"] = "[Channels API] All User Channels Loaded";
+    UserActionsTypes["AllUsersRequested"] = "[Users Home Page] All User Requested";
+    UserActionsTypes["AllUsersLoaded"] = "[Users API] All User Loaded";
+    UserActionsTypes["UserPresenceUpdate"] = "[Users API] User presence Update";
 })(UserActionsTypes || (UserActionsTypes = {}));
 var AllUsersRequested = /** @class */ (function () {
     function AllUsersRequested() {
@@ -2161,6 +2344,14 @@ var AllUsersLoaded = /** @class */ (function () {
         this.type = UserActionsTypes.AllUsersLoaded;
     }
     return AllUsersLoaded;
+}());
+
+var UserPresenceUpdate = /** @class */ (function () {
+    function UserPresenceUpdate(payload) {
+        this.payload = payload;
+        this.type = UserActionsTypes.UserPresenceUpdate;
+    }
+    return UserPresenceUpdate;
 }());
 
 
@@ -2235,6 +2426,62 @@ var ChannelsEffects = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/shared/effects/message.effects.ts":
+/*!***************************************************!*\
+  !*** ./src/app/shared/effects/message.effects.ts ***!
+  \***************************************************/
+/*! exports provided: MessageEffects */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageEffects", function() { return MessageEffects; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ngrx_effects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngrx/effects */ "./node_modules/@ngrx/effects/fesm5/effects.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
+/* harmony import */ var _actions_message_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../actions/message.actions */ "./src/app/shared/actions/message.actions.ts");
+/* harmony import */ var _services_message_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/message.service */ "./src/app/shared/services/message.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var MessageEffects = /** @class */ (function () {
+    function MessageEffects(actions$, messageService, store) {
+        var _this = this;
+        this.actions$ = actions$;
+        this.messageService = messageService;
+        this.store = store;
+        this.addMessageToChannel$ = this.actions$
+            .pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["ofType"])(_actions_message_actions__WEBPACK_IMPORTED_MODULE_4__["MessageActionsTypes"].PostMessageToChannel), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["mergeMap"])(function (action) { return _this.messageService.addMessageToChannel(action.payload.channelId, action.payload.message); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) { return new _actions_message_actions__WEBPACK_IMPORTED_MODULE_4__["ChannelMessageAdded"]({ channelMessage: result }); }));
+    }
+    __decorate([
+        Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["Effect"])(),
+        __metadata("design:type", Object)
+    ], MessageEffects.prototype, "addMessageToChannel$", void 0);
+    MessageEffects = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["Actions"], _services_message_service__WEBPACK_IMPORTED_MODULE_5__["MessageService"],
+            _ngrx_store__WEBPACK_IMPORTED_MODULE_3__["Store"]])
+    ], MessageEffects);
+    return MessageEffects;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/effects/user-channels.effects.ts":
 /*!*********************************************************!*\
   !*** ./src/app/shared/effects/user-channels.effects.ts ***!
@@ -2273,7 +2520,7 @@ var UserChannelsEffects = /** @class */ (function () {
         this.ChannelsService = ChannelsService;
         this.store = store;
         this.loadAllUserChannels$ = this.actions$
-            .pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["ofType"])(_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_5__["UserChannelActionTypes"].AllUserChannelsRequested), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["mergeMap"])(function (action) { return _this.ChannelsService.findAllUserChannels(action.payload.userId); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (userChannels) { return new _actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_5__["AllUserChannelsLoaded"]({ userChannels: userChannels }); }));
+            .pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["ofType"])(_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_5__["UserChannelActionTypes"].AllUserChannelsRequested), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(function (action) { return !!action.payload; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["mergeMap"])(function (action) { return _this.ChannelsService.findAllUserChannels(action.payload.userId); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(function (userChannels) { return !!userChannels && userChannels.length > 0; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (userChannels) { return new _actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_5__["AllUserChannelsLoaded"]({ userChannels: userChannels }); }));
         this.loadTotalUsersAndStarredInfo$ = this.actions$
             .pipe(Object(_ngrx_effects__WEBPACK_IMPORTED_MODULE_1__["ofType"])(_actions_user_channel_actions__WEBPACK_IMPORTED_MODULE_5__["UserChannelActionTypes"].UserChannelSelected), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["mergeMap"])(function (action) { return _this.ChannelsService.fetchStarredInfo(action.payload.userId, action.payload.channelId); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (userChannel) {
             if (!!userChannel) {
@@ -2385,6 +2632,60 @@ var UserEffects = /** @class */ (function () {
     return UserEffects;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/shared/reducers/channel-message.reducers.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/shared/reducers/channel-message.reducers.ts ***!
+  \*************************************************************/
+/*! exports provided: adapter, initialChannelMessagesState, channelMessagesReducer, selectAll, selectEntities, selectIds, selectTotal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "adapter", function() { return adapter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initialChannelMessagesState", function() { return initialChannelMessagesState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "channelMessagesReducer", function() { return channelMessagesReducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAll", function() { return selectAll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectEntities", function() { return selectEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectIds", function() { return selectIds; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectTotal", function() { return selectTotal; });
+/* harmony import */ var _ngrx_entity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngrx/entity */ "./node_modules/@ngrx/entity/fesm5/entity.js");
+/* harmony import */ var _actions_message_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/message.actions */ "./src/app/shared/actions/message.actions.ts");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var _a;
+
+
+var adapter = Object(_ngrx_entity__WEBPACK_IMPORTED_MODULE_0__["createEntityAdapter"])();
+var initialChannelMessagesState = adapter.getInitialState({});
+function channelMessagesReducer(state, action) {
+    if (state === void 0) { state = initialChannelMessagesState; }
+    switch (action.type) {
+        case _actions_message_actions__WEBPACK_IMPORTED_MODULE_1__["MessageActionsTypes"].ChannelMessagesRequested:
+            console.log('inside ChannelMessagesRequested');
+            return state;
+        case _actions_message_actions__WEBPACK_IMPORTED_MODULE_1__["MessageActionsTypes"].ChannelMessageAdded:
+            console.log(action.payload);
+            return adapter.upsertOne(action.payload.channelMessage, __assign({}, state));
+            return state;
+        default: {
+            return state;
+        }
+    }
+}
+var selectAll = (_a = adapter.getSelectors(), _a.selectAll), selectEntities = _a.selectEntities, selectIds = _a.selectIds, selectTotal = _a.selectTotal;
 
 
 /***/ }),
@@ -2536,6 +2837,8 @@ function usersReducer(state, action) {
     switch (action.type) {
         case _actions_user_actions__WEBPACK_IMPORTED_MODULE_1__["UserActionsTypes"].AllUsersLoaded:
             return adapter.addAll(action.payload.users, __assign({}, state));
+        case _actions_user_actions__WEBPACK_IMPORTED_MODULE_1__["UserActionsTypes"].UserPresenceUpdate:
+            return adapter.updateOne(action.payload.user, __assign({}, state));
         default: {
             return state;
         }
@@ -2591,19 +2894,24 @@ var allChannelsLoaded = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createS
 /*!****************************************************!*\
   !*** ./src/app/shared/selectors/user.selectors.ts ***!
   \****************************************************/
-/*! exports provided: selectUsersState, selectAllUsers */
+/*! exports provided: selectUsersState, selectAllUsers, selectAllOtherUsers */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectUsersState", function() { return selectUsersState; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAllUsers", function() { return selectAllUsers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAllOtherUsers", function() { return selectAllOtherUsers; });
 /* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
 /* harmony import */ var _reducers_user_reducers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../reducers/user.reducers */ "./src/app/shared/reducers/user.reducers.ts");
 
 
 var selectUsersState = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createFeatureSelector"])('users');
 var selectAllUsers = Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectUsersState, _reducers_user_reducers__WEBPACK_IMPORTED_MODULE_1__["selectAll"]);
+var selectAllOtherUsers = function (userId) { return Object(_ngrx_store__WEBPACK_IMPORTED_MODULE_0__["createSelector"])(selectAllUsers, function (users) {
+    return users.filter(function (user) { return user.id
+        && user.id !== userId; });
+}); };
 
 
 /***/ }),
@@ -2893,7 +3201,7 @@ var ChannelService = /** @class */ (function () {
         this.channelSelectedSubject.next({ selectedChannel: channelId });
     };
     ChannelService.prototype.clear = function () {
-        this.channelSelectedSubject.next();
+        this.channelSelectedSubject.next({ selectedChannel: null });
     };
     ChannelService.prototype.getSelectedChannel = function () {
         return this.channelSelectedSubject.asObservable();
@@ -2905,6 +3213,102 @@ var ChannelService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_1__["AngularFirestore"], _ngrx_store__WEBPACK_IMPORTED_MODULE_5__["Store"]])
     ], ChannelService);
     return ChannelService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/services/message.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/shared/services/message.service.ts ***!
+  \****************************************************/
+/*! exports provided: MessageService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageService", function() { return MessageService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+var MessageService = /** @class */ (function () {
+    function MessageService(db) {
+        this.db = db;
+    }
+    MessageService.prototype.addMessageToChannel = function (channelId, message) {
+        var _this = this;
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(this.db.firestore.runTransaction(function (transaction) { return __awaiter(_this, void 0, void 0, function () {
+            var cMessage;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.db.doc("/channelMessages/" + channelId + "/messages/" + message.messageId)
+                            .set(message, {
+                            merge: true
+                        })];
+                    case 1:
+                        _a.sent();
+                        cMessage = {};
+                        cMessage[channelId] = message;
+                        return [2 /*return*/, cMessage];
+                }
+            });
+        }); }));
+    };
+    MessageService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_1__["AngularFirestore"]])
+    ], MessageService);
+    return MessageService;
 }());
 
 
@@ -2927,6 +3331,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _services_db_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/db-utils */ "./src/app/services/db-utils.ts");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2981,6 +3396,7 @@ var UserService = /** @class */ (function () {
     function UserService(db, afAuth) {
         this.db = db;
         this.afAuth = afAuth;
+        this.userSelectedSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
     }
     UserService.prototype.createUser = function (userId, changes) {
         var _this = this;
@@ -3020,11 +3436,40 @@ var UserService = /** @class */ (function () {
         }); }));
     };
     UserService.prototype.findAllUsers = function () {
-        return this.db.collection("users")
+        return this
+            .findAllPresences()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["withLatestFrom"])(this.getRegisteredUsers()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (_a) {
+            var presences = _a[0], users = _a[1];
+            return users.map(function (user) {
+                // tslint:disable-next-line:no-shadowed-variable
+                var isOnPresence = presences.find(function (presence) { return presence.id === user.id; });
+                var presence = isOnPresence ? isOnPresence.loggedIn : false;
+                return __assign({}, user, { presence: presence });
+            });
+        }));
+    };
+    UserService.prototype.getRegisteredUsers = function () {
+        return this.db.collection('users')
+            .valueChanges()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (values) {
+            return Object(_services_db_utils__WEBPACK_IMPORTED_MODULE_5__["convertValueChanges"])(values);
+        }));
+    };
+    UserService.prototype.findAllPresences = function () {
+        return this.db.collection('presence')
             .snapshotChanges()
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (snaps) {
             return Object(_services_db_utils__WEBPACK_IMPORTED_MODULE_5__["convertSnaps"])(snaps);
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])());
+        }));
+    };
+    UserService.prototype.userSelected = function (userId) {
+        this.userSelectedSubject.next({ selectedUser: userId });
+    };
+    UserService.prototype.clear = function () {
+        this.userSelectedSubject.next({ selectedUser: null });
+    };
+    UserService.prototype.getSelectedUser = function () {
+        return this.userSelectedSubject.asObservable();
     };
     UserService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
