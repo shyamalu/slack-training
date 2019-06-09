@@ -13,7 +13,7 @@
       <mat-divider *ngIf="!last" mat-inset></mat-divider>
     </ng-template>
   </mat-list>
-  <mat-dialog-actions>
+  <mat-dialog-actions *ngIf="!!selectedChannelId">
     <button class="bottom-toolbar" mat-raised-button color="primary"
             (click)="loadMore()">Load More
     </button>
