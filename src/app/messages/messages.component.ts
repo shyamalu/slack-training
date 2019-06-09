@@ -52,7 +52,7 @@ export class MessagesComponent implements OnInit {
 
     loadMore() {
         this.loading = true;
-        const nextCriteria: number = _.last(this.messages).timestamp;
+        const nextCriteria: number = _.last(_.orderBy(this.messages, ['timestamp'],['desc'])).timestamp;
 
         this.store.dispatch(new ChannelMessagesRequested({
             channelId: this.selectedChannelId,

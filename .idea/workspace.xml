@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf71022-e9ae-4804-b42c-5c9ec246cf47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/model/channel-message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/model/direct-message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/model/message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/actions/message.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/reducers/channel-message.reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/selectors/message.selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/services/message.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/channels/channels.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/channels/channels.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/direct-messages/direct-messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/direct-messages/direct-messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/info-bar/info-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/info-bar/info-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/info-bar/info-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/info-bar/info-bar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/message-form/message-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/message-form/message-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/message-form/message-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/message-form/message-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/messages.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/services/channel.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/services/channel.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/services/message.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/services/message.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -59,20 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/channel-search-dialog/channel-search-dialog.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/messages/messages.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            <state relative-caret-position="441">
+              <caret line="54" column="92" selection-start-line="54" selection-start-column="92" selection-end-line="54" selection-end-column="92" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -101,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/shared/effects/message.effects.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="93">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -116,10 +86,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/shared/services/message.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="508">
               <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/shared/reducers/channel-message.reducers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-356">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new PostMessageToChannel</find>
       <find>PostMessageToChannel</find>
       <find>this.store.dispat</find>
       <find>add</find>
@@ -183,9 +164,10 @@
       <find>loadMore</find>
       <find>new ChannelMessagesRequested</find>
       <find>exhaustMap</find>
-      <find>ChannelMessagesRequested</find>
       <find>concat(</find>
       <find>endAt</find>
+      <find>ChannelMessagesRequested</find>
+      <find>_.last</find>
       <find>loading</find>
     </findStrings>
     <replaceStrings>
@@ -238,10 +220,10 @@
         <option value="$PROJECT_DIR$/src/app/shared/selectors/message.selectors.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/actions/message.actions.ts" />
         <option value="$PROJECT_DIR$/src/app/channels/channels.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/services/message.service.ts" />
         <option value="$PROJECT_DIR$/src/app/messages/messages.component.html" />
-        <option value="$PROJECT_DIR$/src/app/messages/messages.component.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/effects/message.effects.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/services/message.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/messages/messages.component.ts" />
       </list>
     </option>
   </component>
@@ -390,12 +372,12 @@
       <workItem from="1559966441260" duration="10693000" />
       <workItem from="1559984505481" duration="6790000" />
       <workItem from="1559997024865" duration="105000" />
-      <workItem from="1560010043277" duration="19408000" />
+      <workItem from="1560010043277" duration="20175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36996000" />
+    <option name="totallyTimeSpent" value="37763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="983" extended-state="0" />
@@ -728,16 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/reducers/channel-message.reducers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/channels/channels.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -827,16 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/services/message.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/messages/messages.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -844,22 +806,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/messages/messages.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/shared/effects/message.effects.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        <state relative-caret-position="93">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/effects/message.effects.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/shared/services/message.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="508">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/reducers/channel-message.reducers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/messages/messages.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="54" column="92" selection-start-line="54" selection-start-column="92" selection-end-line="54" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>

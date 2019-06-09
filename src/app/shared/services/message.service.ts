@@ -30,7 +30,7 @@ export class MessageService {
         }));
     }
 
-    findMessagesForChannel(channelId: string, criteria: number = 0, pageSize: number = 5): Observable<ChannelMessage> {
+    findMessagesForChannel(channelId: string, criteria: number = 0, pageSize: number = 3): Observable<ChannelMessage> {
         criteria = criteria === 0 ? new Date().getTime() : criteria;
         return this.db.collection(
             `channelMessages/${channelId}/messages`,
