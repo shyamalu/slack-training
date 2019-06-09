@@ -68,6 +68,7 @@ import { usersReducer } from './shared/reducers/user.reducers';
 import { UserEffects } from './shared/effects/user.effects';
 import { MessageEffects } from './shared/effects/message.effects';
 import { channelMessagesReducer } from './shared/reducers/channel-message.reducers';
+import { directMessagesReducer } from './shared/reducers/direct-message.reducers';
 
 @NgModule({
     declarations   : [
@@ -131,6 +132,7 @@ import { channelMessagesReducer } from './shared/reducers/channel-message.reduce
         StoreModule.forFeature('users', usersReducer),
         EffectsModule.forFeature([UserEffects]),
         StoreModule.forFeature('channelMessages', channelMessagesReducer),
+        StoreModule.forFeature('directMessages', directMessagesReducer),
         EffectsModule.forFeature([MessageEffects])
     ],
     providers      : [

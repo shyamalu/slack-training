@@ -1,9 +1,6 @@
 import { Message } from './message';
 
+// fromUserId-toUserId - key
 export interface DirectMessage {
-    [senderUserId: string]: PrivateMessage[];
-}
-
-export interface PrivateMessage {
-    [receipientId: string]: Message[];
+    [keyId: string]: Message[];
 }
